@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Liandra Soares · Psicóloga Clínica</title>
-<meta name="description" content="Liandra Soares, psicóloga clínica (CRP 12/30448). Atendimento online para adolescentes e adultos, a partir da abordagem junguiana.">
+<meta name="description" content="Liandra Soares, psicóloga clínica (CRP 12/30448). Atendimento online e presencial em Canelinha (SC) para adolescentes e adultos, a partir da abordagem junguiana.">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,22 +30,21 @@
 <section id="inicio" class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <div class="eyebrow eyebrow-line"><span aria-hidden="true"></span>Psicóloga clínica · Atendimento online</div>
+      <div class="eyebrow eyebrow-line hero-eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span class="hero-eyebrow-text"><span>Psicóloga clínica</span><span class="only-mobile"> · CRP 12/30448</span><span class="sep"> · </span><span>Atendimento online e presencial</span></span></div>
       <h1 class="hero-title">Liandra<br>Soares</h1>
       <p class="hero-lead">Um espaço de escuta, acolhimento e reconexão com quem você é.</p>
       <div class="hero-actions">
         <a href="#" data-wa-link target="_blank" rel="noopener" class="btn btn-primary">Agendar pelo WhatsApp <span aria-hidden="true">→</span></a>
         <a href="#sobre" class="link-underline">Conheça meu trabalho</a>
       </div>
-      <div class="hero-facts">
+      <div class="hero-facts only-desktop">
         <span><strong>CRP</strong> 12/30448</span>
         <span><strong>Abordagem</strong> junguiana</span>
         <span><strong>Sessões</strong> de 50 min</span>
       </div>
     </div>
     <div class="hero-photo">
-      <div class="hero-arch" aria-hidden="true"></div>
-      <img src="assets/liandra-hero.png" alt="Liandra Soares, psicóloga" width="680" height="720">
+      <img src="assets/liandra-hero.jpg" alt="Liandra Soares, psicóloga, apoiada em uma pilha de livros de Jung" width="1120" height="1400">
     </div>
   </div>
 </section>
@@ -54,7 +53,7 @@
   <div class="intro-inner">
     <div class="intro-photo-wrap">
       <div class="intro-photo">
-        <img src="assets/liandra-sobre.png" alt="Liandra Soares sentada" width="520" height="710" loading="lazy">
+        <img src="assets/liandra-sobre.jpg" alt="Liandra Soares sentada em uma poltrona" width="880" height="1200" loading="lazy">
       </div>
     </div>
     <div class="intro-copy">
@@ -74,9 +73,9 @@
     <div class="about-copy">
       <span class="eyebrow eyebrow-dark">Sobre mim</span>
       <h2 class="h2 about-title">Quem é Liandra?</h2>
-      <p class="body-text">Sou psicóloga clínica, formada pela Uniavan, e atualmente estou em pós-graduação em Psicologia Analítica. Realizo atendimentos psicológicos online para adolescentes e adultos, a partir da abordagem junguiana.</p>
+      <p class="body-text">Sou psicóloga clínica, formada pela Uniavan, e atualmente estou em pós-graduação em Psicologia Analítica. Realizo atendimentos psicológicos online e presenciais, em Canelinha (SC), para adolescentes e adultos, a partir da abordagem junguiana.</p>
       <p class="body-text">Meu trabalho considera cada pessoa em sua singularidade: sua história, relações e experiências. A partir da Psicologia Analítica, desenvolvida por Carl Gustav Jung, busco compreender os significados presentes em suas vivências e conflitos, favorecendo maior consciência sobre si e novas possibilidades diante da vida.</p>
-      <div class="badges">
+      <div class="badges only-desktop">
         <span class="badge">Formada pela Uniavan</span>
         <span class="badge">Pós em Psicologia Analítica</span>
         <span class="badge">Adolescentes e adultos</span>
@@ -98,15 +97,16 @@
         <h2 class="h2 service-title">Atendimento</h2>
       </div>
       <div class="service-tags">
-        <span class="tag tag-dark">100% online</span>
+        <span class="tag tag-dark">Online</span>
+        <span class="tag tag-dark">Presencial em Canelinha</span>
         <span class="tag tag-light">Sessões de ~50 minutos</span>
       </div>
     </div>
     <div class="steps">
       <article class="step">
         <span class="step-n">01</span>
-        <h3 class="step-title">Online, com privacidade</h3>
-        <p>Os atendimentos são realizados de forma online, proporcionando um espaço de escuta e acolhimento, com praticidade e privacidade. As sessões têm duração aproximada de 50 minutos e acontecem por meio do diálogo e da escuta psicológica.</p>
+        <h3 class="step-title">Online ou presencial</h3>
+        <p>Os atendimentos podem ser realizados de forma online ou presencial, em Canelinha (SC), proporcionando um espaço de escuta e acolhimento, com praticidade e privacidade. As sessões têm duração aproximada de 50 minutos e acontecem por meio do diálogo e da escuta psicológica.</p>
       </article>
       <article class="step">
         <span class="step-n">02</span>
@@ -136,13 +136,19 @@
 
     <form class="form" id="agendamento">
       <div class="form-title">Solicite seu horário</div>
-      <label class="field">Nome
+      <label class="field field-full">Nome
         <input name="nome" required placeholder="Seu nome" autocomplete="name">
       </label>
       <label class="field">Atendimento para
         <select name="publico">
           <option>Adulto</option>
           <option>Adolescente</option>
+        </select>
+      </label>
+      <label class="field">Modalidade
+        <select name="modalidade">
+          <option>Online</option>
+          <option>Presencial (Canelinha)</option>
         </select>
       </label>
       <div class="field field-full" role="group" aria-labelledby="periodo-label">

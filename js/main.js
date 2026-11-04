@@ -47,10 +47,12 @@
     e.preventDefault();
     var nome = form.elements.nome.value.trim();
     var publico = form.elements.publico.value;
+    var modalidade = form.elements.modalidade.value;
     var msg = form.elements.msg.value.trim();
 
     var txt = GREETING + '\n\nNome: ' + nome +
       '\nAtendimento para: ' + publico +
+      '\nModalidade: ' + modalidade +
       '\nMelhor período: ' + periodo +
       (msg ? '\nMensagem: ' + msg : '');
 
