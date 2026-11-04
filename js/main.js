@@ -23,6 +23,29 @@
     a.href = waUrl(GREETING);
   });
 
+  // ----- mobile menu -----
+  var header = document.querySelector('.site-header');
+  var toggle = document.querySelector('.nav-toggle');
+  if (header && toggle) {
+    var setOpen = function (open) {
+      header.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    };
+    toggle.addEventListener('click', function () {
+      setOpen(!header.classList.contains('is-open'));
+    });
+    header.querySelectorAll('.nav-links a').forEach(function (a) {
+      a.addEventListener('click', function () { setOpen(false); });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setOpen(false);
+    });
+    document.addEventListener('click', function (e) {
+      if (!header.contains(e.target)) setOpen(false);
+    });
+  }
+
   var ano = document.getElementById('ano');
   if (ano) ano.textContent = new Date().getFullYear();
 
