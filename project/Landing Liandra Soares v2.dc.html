@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F8F4EE;color:#5C4033;font-family:'Poppins',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased}
+a{color:#7A5240}
+a:hover{color:#4E3226}
+strong{font-weight:500;color:#4E3226}
+*{box-sizing:border-box}
+input,select,textarea,button{font-family:inherit}
+</style>
+</helmet>
+
+<header style="position:sticky;top:0;z-index:20;background:rgba(248,244,238,0.88);backdrop-filter:blur(12px);border-bottom:1px solid #E9DFD2">
+  <nav style="max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+    <a href="#inicio" style="display:block;width:160px;height:46px"><img src="assets/logo.png" alt="Liandra Soares – Psicóloga CRP 12/30448" style="width:100%;height:100%;object-fit:contain"></a>
+    <div style="display:flex;gap:30px;align-items:center;flex-wrap:wrap;font-size:14px;font-weight:400">
+      <a href="#sobre" style="color:#5C4033;text-decoration:none" style-hover="color:#A9734F">Sobre</a>
+      <a href="#processo" style="color:#5C4033;text-decoration:none" style-hover="color:#A9734F">Abordagem</a>
+      <a href="#atendimento" style="color:#5C4033;text-decoration:none" style-hover="color:#A9734F">Atendimento</a>
+      <a href="#contato" style="background:#6E4836;color:#FBF8F2;padding:11px 22px;border-radius:999px;text-decoration:none;white-space:nowrap;font-weight:500" style-hover="background:#4E3226;color:#FBF8F2">Agendar sessão</a>
+    </div>
+  </nav>
+</header>
+
+<section id="inicio" data-screen-label="Hero" style="background:linear-gradient(180deg,#FBF8F3 0%,#EDE5D9 100%);overflow:hidden">
+  <div style="max-width:1200px;margin:0 auto;padding:40px 24px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:24px;align-items:end">
+    <div style="display:flex;flex-direction:column;gap:30px;padding-bottom:88px;align-self:center">
+      <div style="display:flex;align-items:center;gap:14px;font-size:12px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#A9734F">
+        <span style="width:36px;height:1px;background:#A9734F"></span>Psicóloga clínica · Atendimento online
+      </div>
+      <h1 style="margin:0;font-family:'Cormorant',serif;font-weight:500;font-size:clamp(76px,10vw,148px);line-height:0.86;letter-spacing:-0.01em;color:#5C3D2E">Liandra<br>Soares</h1>
+      <p style="margin:0;font-family:'Cormorant',serif;font-style:italic;font-size:clamp(26px,2.8vw,36px);line-height:1.3;color:#6E4836;max-width:520px;text-wrap:balance">Um espaço de escuta, acolhimento e reconexão com quem você é.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+        <a href="{{ waLink }}" target="_blank" style="background:#6E4836;color:#FBF8F2;padding:18px 36px;border-radius:999px;font-size:16px;font-weight:500;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:10px" style-hover="background:#4E3226;color:#FBF8F2">Agendar pelo WhatsApp <span>→</span></a>
+        <a href="#sobre" style="color:#5C4033;padding:18px 20px;font-size:16px;font-weight:400;white-space:nowrap;text-decoration:underline;text-underline-offset:6px;text-decoration-color:#CDAE90" style-hover="color:#A9734F">Conheça meu trabalho</a>
+      </div>
+      <div style="display:flex;gap:28px;flex-wrap:wrap;padding-top:22px;border-top:1px solid #DCCDBA;font-size:13px;color:#7A5E50">
+        <span><strong>CRP</strong> 12/30448</span>
+        <span><strong>Abordagem</strong> junguiana</span>
+        <span><strong>Sessões</strong> de 50 min</span>
+      </div>
+    </div>
+    <div style="position:relative;width:100%;max-width:560px;aspect-ratio:680/720;justify-self:center">
+      <div style="position:absolute;left:12%;right:8%;top:10%;bottom:0;border-radius:999px 999px 0 0;background:#E8CFB0"></div>
+      <img src="assets/liandra-hero.png" alt="Liandra Soares, psicóloga" style="position:relative;width:100%;height:100%;object-fit:contain;display:block">
+    </div>
+  </div>
+</section>
+
+<section id="sobre" data-screen-label="Introdução" style="background:#F8F4EE">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(72px,9vw,128px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,96px);align-items:center">
+    <div style="display:flex;justify-content:center">
+      <div style="width:100%;max-width:440px;aspect-ratio:520/710;border-radius:999px 999px 20px 20px;overflow:hidden;background:#EDEBE8">
+        <img src="assets/liandra-sobre.png" alt="Liandra Soares sentada" style="width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <p style="margin:0;font-family:'Cormorant',serif;font-size:clamp(34px,3.6vw,48px);line-height:1.15;color:#5C3D2E;text-wrap:balance">Se você chegou até aqui, talvez algo <em style="color:#A9734F">dentro de você</em> esteja pedindo atenção.</p>
+      <div style="display:flex;flex-direction:column;gap:20px;font-size:17px;line-height:1.8;max-width:540px">
+        <p style="margin:0;text-wrap:pretty">A psicoterapia é um convite para olhar para si com mais <strong>cuidado</strong> e compreender <strong>seus sentimentos</strong>.</p>
+        <p style="margin:0;text-wrap:pretty">Escolhi a Psicologia porque sempre acreditei na potência do encontro: no poder de ser escutado de verdade, sem julgamentos, sem pressa e sem rótulos.</p>
+        <p style="margin:0;text-wrap:pretty">Acredito que cada pessoa carrega um <strong>universo simbólico único</strong> e que, muitas vezes, aquilo que nos <strong>causa dor</strong> também traz pistas importantes sobre quem <strong>estamos nos tornando</strong>.</p>
+      </div>
+      <p style="margin:8px 0 0;font-family:'Cormorant',serif;font-style:italic;font-size:30px;color:#A9734F">A sua história importa.</p>
+    </div>
+  </div>
+</section>
+
+<section id="processo" data-screen-label="Quem é Liandra" style="background:#E8D5BE">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(72px,9vw,128px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(48px,6vw,96px)">
+    <div style="display:flex;flex-direction:column;gap:26px">
+      <span style="font-size:12px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#8A5A40">Sobre mim</span>
+      <h2 style="margin:0;font-family:'Cormorant',serif;font-weight:500;font-size:clamp(44px,5vw,64px);line-height:1;color:#5C3D2E">Quem é Liandra?</h2>
+      <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">Sou psicóloga clínica, formada pela Uniavan, e atualmente estou em pós-graduação em Psicologia Analítica. Realizo atendimentos psicológicos online para adolescentes e adultos, a partir da abordagem junguiana.</p>
+      <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">Meu trabalho considera cada pessoa em sua singularidade: sua história, relações e experiências. A partir da Psicologia Analítica, desenvolvida por Carl Gustav Jung, busco compreender os significados presentes em suas vivências e conflitos, favorecendo maior consciência sobre si e novas possibilidades diante da vida.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:6px">
+        <span style="padding:9px 16px;border:1px solid #C9A887;border-radius:999px;font-size:13px;font-weight:400">Formada pela Uniavan</span>
+        <span style="padding:9px 16px;border:1px solid #C9A887;border-radius:999px;font-size:13px;font-weight:400">Pós em Psicologia Analítica</span>
+        <span style="padding:9px 16px;border:1px solid #C9A887;border-radius:999px;font-size:13px;font-weight:400">Adolescentes e adultos</span>
+      </div>
+    </div>
+    <div style="background:#F8F4EE;border-radius:28px;padding:clamp(36px,5vw,64px);display:flex;flex-direction:column;gap:32px;align-self:start">
+      <h2 style="margin:0;font-family:'Cormorant',serif;font-weight:500;font-size:clamp(42px,5vw,62px);line-height:1;color:#5C3D2E">O processo de se tornar <em style="color:#A9734F">quem você é</em></h2>
+      <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">Acredito que cada pessoa possui um <strong>caminho único</strong>, e que a psicoterapia é um espaço de escuta, acolhimento e construção, <strong>onde é possível entrar em contato com partes de si</strong>, ressignificar experiências e desenvolver uma relação mais consciente consigo mesmo.</p>
+      <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">Busco oferecer um ambiente <strong>ético</strong>, <strong>sensível</strong> e <strong>respeitoso</strong>, onde você possa se sentir seguro(a) <strong>para ser quem é</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="atendimento" data-screen-label="Atendimento" style="background:#F8F4EE">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(72px,9vw,128px) 24px;display:flex;flex-direction:column;gap:56px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <span style="font-size:12px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#A9734F">Como funciona</span>
+        <h2 style="margin:0;font-family:'Cormorant',serif;font-weight:500;font-size:clamp(48px,6vw,76px);line-height:1;color:#5C3D2E">Atendimento</h2>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <span style="padding:10px 18px;background:#6E4836;color:#FBF8F2;border-radius:999px;font-size:14px;font-weight:400">100% online</span>
+        <span style="padding:10px 18px;background:#E8D5BE;border-radius:999px;font-size:14px;font-weight:400">Sessões de ~50 minutos</span>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px">
+      <sc-for list="{{ etapas }}" as="e" hint-placeholder-count="3">
+        <div style="background:#FFFDF9;border:1px solid #EADFD1;border-radius:24px;padding:36px 32px;display:flex;flex-direction:column;gap:18px">
+          <span style="font-family:'Cormorant',serif;font-style:italic;font-size:44px;line-height:1;color:#C9A887">{{ e.n }}</span>
+          <span style="font-family:'Cormorant',serif;font-weight:600;font-size:28px;line-height:1.1;color:#5C3D2E">{{ e.title }}</span>
+          <p style="margin:0;font-size:16px;line-height:1.75;text-wrap:pretty">{{ e.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="contato" data-screen-label="Agendamento / Contato" style="background:#5C3D2E;color:#F3E9DD">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(72px,9vw,120px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,88px);align-items:start">
+    <div style="display:flex;flex-direction:column;gap:26px">
+      <span style="font-size:12px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#E0BE9C">Agendamento / Contato</span>
+      <h2 style="margin:0;font-family:'Cormorant',serif;font-weight:500;font-size:clamp(44px,5.4vw,70px);line-height:1;color:#FBF6EF;text-wrap:balance">Se você sente que é o momento de cuidar de si…</h2>
+      <p style="margin:0;font-size:18px;line-height:1.7;color:#E6D6C5;max-width:460px">…será um prazer te acompanhar nesse processo. Agende sua sessão ou tire dúvidas pelo WhatsApp.</p>
+      <div style="display:flex;flex-direction:column;gap:0;margin-top:12px;max-width:460px">
+        <a href="{{ waLink }}" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-top:1px solid #7D5C4B;color:#FBF6EF;text-decoration:none;font-size:17px" style-hover="color:#E0BE9C"><span>WhatsApp</span><span>→</span></a>
+        <a href="https://www.instagram.com/psi.liandrasoares/" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-top:1px solid #7D5C4B;border-bottom:1px solid #7D5C4B;color:#FBF6EF;text-decoration:none;font-size:17px" style-hover="color:#E0BE9C"><span>Instagram · @psi.liandrasoares</span><span>→</span></a>
+      </div>
+    </div>
+
+    <form onSubmit="{{ submit }}" style="background:#F8F4EE;color:#5C4033;border-radius:28px;padding:clamp(28px,4vw,44px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:18px">
+      <div style="grid-column:1/-1;font-family:'Cormorant',serif;font-weight:600;font-size:30px;color:#5C3D2E">Solicite seu horário</div>
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:500">Nome
+        <input value="{{ form.nome }}" onChange="{{ onNome }}" required="{{ true }}" placeholder="Seu nome" style="padding:14px 18px;border:1px solid #DCCAB4;border-radius:14px;font-size:16px;background:#fff;color:#5C4033;outline-color:#A9734F">
+      </label>
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:500">Atendimento para
+        <select value="{{ form.publico }}" onChange="{{ onPublico }}" style="padding:14px 18px;border:1px solid #DCCAB4;border-radius:14px;font-size:16px;background:#fff;color:#5C4033">
+          <option>Adulto</option><option>Adolescente</option>
+        </select>
+      </label>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:500;grid-column:1/-1">Melhor período
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <sc-for list="{{ periodos }}" as="p" hint-placeholder-count="3">
+            <button type="button" onClick="{{ p.pick }}" style="flex:1;min-width:90px;padding:12px;border-radius:999px;font-size:15px;cursor:pointer;border:1px solid {{ p.border }};background:{{ p.bg }};color:{{ p.color }}">{{ p.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:500;grid-column:1/-1">Mensagem (opcional)
+        <textarea value="{{ form.msg }}" onChange="{{ onMsg }}" rows="3" placeholder="Se quiser, conte brevemente o que te traz" style="padding:14px 18px;border:1px solid #DCCAB4;border-radius:14px;font-size:16px;background:#fff;color:#5C4033;resize:vertical"></textarea>
+      </label>
+      <button type="submit" style="grid-column:1/-1;background:#6E4836;color:#FBF8F2;border:none;padding:18px;border-radius:999px;font-size:16px;font-weight:500;cursor:pointer" style-hover="background:#4E3226">Enviar pelo WhatsApp →</button>
+      <span style="grid-column:1/-1;font-size:12px;color:#8A7062;text-align:center">Suas informações são tratadas com sigilo.</span>
+    </form>
+  </div>
+  <footer style="max-width:1200px;margin:0 auto;padding:28px 24px 36px;border-top:1px solid #7D5C4B;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:#CDB8A5">
+    <span>Liandra Soares · Psicóloga Clínica · CRP 12/30448</span>
+    <a href="https://www.instagram.com/psi.liandrasoares/" target="_blank" style="color:#CDB8A5;text-decoration:none" style-hover="color:#FBF6EF">Instagram @psi.liandrasoares</a>
+    <span>© 2026 Todos os direitos reservados.</span>
+  </footer>
+</section>
+
+<sc-if value="{{ showWa }}" hint-placeholder-val="{{ true }}">
+  <a href="{{ waLink }}" target="_blank" aria-label="Conversar no WhatsApp" style="position:fixed;right:24px;bottom:24px;z-index:30;background:#FBF8F2;color:#5C3D2E;border:1px solid #E0CFBB;padding:14px 22px;border-radius:999px;font-size:14px;font-weight:500;text-decoration:none;box-shadow:0 12px 32px rgba(60,38,28,0.22);display:flex;align-items:center;gap:10px" style-hover="background:#6E4836;color:#FBF8F2"><span style="width:9px;height:9px;border-radius:50%;background:#6FB26A"></span>WhatsApp</a>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;5548998041223&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;showFloatingWa&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contato&quot;}}">
+class Component extends DCLogic {
+  state = { form: { nome: '', publico: 'Adulto', periodo: 'Tarde', msg: '' } };
+  setField = (k) => (e) => { const v = e.target.value; this.setState(s => ({ form: { ...s.form, [k]: v } })); };
+  renderVals() {
+    const raw = String(this.props.whatsapp ?? 'https://wa.link/z896xz').trim();
+    const isLink = /^https?:\/\//.test(raw);
+    const num = raw.replace(/\D/g, '');
+    const { form } = this.state;
+    return {
+      waLink: isLink ? raw : `https://wa.me/${num}?text=${encodeURIComponent('Olá, Liandra! Gostaria de agendar uma sessão.')}`,
+      showWa: this.props.showFloatingWa ?? true,
+      form,
+      etapas: [
+        { n: '01', title: 'Online, com privacidade', text: 'Os atendimentos são realizados de forma online, proporcionando um espaço de escuta e acolhimento, com praticidade e privacidade. As sessões têm duração aproximada de 50 minutos e acontecem por meio do diálogo e da escuta psicológica.' },
+        { n: '02', title: 'Um processo construído junto', text: 'A psicoterapia é um processo construído ao longo dos encontros, no qual podemos olhar com mais atenção para sentimentos, pensamentos, experiências e situações que fazem parte da sua história.' },
+        { n: '03', title: 'Novas possibilidades', text: 'A partir desse processo, buscamos ampliar a compreensão sobre si mesmo, reconhecer padrões e conflitos que podem estar presentes e encontrar novas possibilidades para lidar com as questões que surgem ao longo da vida.' }
+      ],
+      periodos: ['Manhã', 'Tarde', 'Noite'].map(label => {
+        const on = form.periodo === label;
+        return { label, bg: on ? '#6E4836' : '#fff', color: on ? '#FBF8F2' : '#5C4033', border: on ? '#6E4836' : '#DCCAB4',
+          pick: () => this.setState(s => ({ form: { ...s.form, periodo: label } })) };
+      }),
+      onNome: this.setField('nome'), onPublico: this.setField('publico'), onMsg: this.setField('msg'),
+      submit: (e) => {
+        e.preventDefault();
+        const txt = `Olá, Liandra! Gostaria de agendar uma sessão.\n\nNome: ${form.nome}\nAtendimento para: ${form.publico}\nMelhor período: ${form.periodo}` + (form.msg ? `\nMensagem: ${form.msg}` : '');
+        if (isLink) { navigator.clipboard?.writeText(txt).catch(() => {}); window.open(raw, '_blank'); }
+        else window.open(`https://wa.me/${num}?text=${encodeURIComponent(txt)}`, '_blank');
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
